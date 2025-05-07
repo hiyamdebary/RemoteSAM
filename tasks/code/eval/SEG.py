@@ -1,4 +1,4 @@
-# ????W??H
+
 import numpy as np
 
 import torch.nn.functional as F
@@ -167,16 +167,8 @@ def get_transform(args):
     return T.Compose(transforms)
 
 
-if __name__ == '__main__':
-    from PIL import Image
-    import os
-    from args import get_parser_miou
 
-    parse = get_parser_miou()
-    from bert.modeling_bert import BertModel
-
-    args = parse.parse_args()
-
+def main(args):
     cudnn.benchmark = True
     cudnn.deterministic = True
 
@@ -234,3 +226,8 @@ if __name__ == '__main__':
         compute_mIoU(args, model, bert_model, cat_dictionary, refToInput, refToAttention, label_path, img_path,
                      len(cat_dictionary.keys()) + 1, name_classes)
 
+if __name__ == '__main__':
+    from args import get_parser
+    parser = get_parser()
+    args = parser.parse_args()
+    main(args)

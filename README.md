@@ -34,9 +34,10 @@ Dataset : 🤗[RemoteSAM-270K](https://huggingface.co/datasets/1e12Leon/RemoteSA
 
 
 ## News
-- **2025/5/3**: The RemoteSAM and Code are released. 
-- **2025/4/23**: The RemoteSAM-270K is released. 
-- **2025/4/17**: The first version of our paper is released on arXiv. Codes and models will be open-sourced at this repository.
+
+- **2025/5/7**: We have released the model and dataset! You can download RemoteSAM-270K from 🤗[RemoteSAM-270K](https://huggingface.co/datasets/1e12Leon/RemoteSAM_270K) and checkpoint from 🤗[RemoteSAM](https://huggingface.co/1e12Leon/RemoteSAM).
+- **2025/5/3**: Welcome to RemoteSAM! The preprint of our paper is available. Dataset and model are open-sourced at this repository.
+
 
 
 ## Introduction

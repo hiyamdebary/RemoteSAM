@@ -42,16 +42,16 @@ def get_parser():
                              'when training, window size is inferred from pre-trained weights file name'
                              '(containing \'window12\'). Initialize Swin with window size 12 instead of the default 7.')
     parser.add_argument('-j', '--workers', default=8, type=int, metavar='N', help='number of data loading workers')
-    parser.add_argument("--imageFolder", default='/data/dishimin/iSAID/images/rrsisd/JPEGImages/', type=str, 
+    parser.add_argument("--imageFolder", default='/data/RemoteSAM-270K/JPEGImages/', type=str, 
                         help="imageFolder path")
-    parser.add_argument("--ref_file_path", default='/data/dishimin/iSAID/rrsisd-dota/refs(unc)DOTA_final.p', type=str, 
+    parser.add_argument("--ref_file_path", default='/data/RemoteSAM-270K/refs(unc)_RemoteSAM.p', type=str, 
                         help="ref_file_path")
-    parser.add_argument("--instances_path", default='/data/dishimin/iSAID/rrsisd_0217/instances_all2.json', type=str, 
+    parser.add_argument("--instances_path", default='/data/RemoteSAM-270K/instances.json', type=str, 
                         help="instances.json's path")
     parser.add_argument("--eval", action="store_true", help="Only run evaluation")
     parser.add_argument('--EPOC', action='store_true', help='if true, use EPOC')
     parser.add_argument('--save_path', default='', help='save_path')
-    parser.add_argument('--task', type=str, choices=['CNT', 'DET', 'CAP', 'VG', 'MCC', 'MLC'], 
+    parser.add_argument('--task', type=str, choices=['CNT', 'DET', 'CAP', 'VG', 'MCC', 'MLC','SEG','REF'], 
                         help='For tasks other than referring segmentation and semantic segmentation, specify the task')
     parser.add_argument('--annoFolder', default='/data/dishimin/iSAID/rrsisd/Annotations/', type=str, help="annoFolder path")
     parser.add_argument('--sentence', default='', help='sentence input')
