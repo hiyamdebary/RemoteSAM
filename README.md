@@ -254,5 +254,13 @@ Please Contact yaoliang@hhu.edu.cn
 ## Cite
 If you find this work useful, please cite our paper as:
 ```bibtex
-
+@misc{yao2025RemoteSAM,
+      title={RemoteSAM: Towards Segment Anything for Earth Observation}, 
+      author={Liang Yao and Fan Liu and Delong Chen and Chuanyi Zhang and Yijun Wang and Ziyun Chen and Wei Xu and Shimin Di and Yuhui Zheng},
+      year={2025},
+      eprint={2505.18022},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2505.18022}, 
+}
 ```
