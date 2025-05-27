@@ -10,7 +10,7 @@ scipy==1.9.2
 timm==0.6.11
 tokenizers==0.13.1
 tqdm==4.64.1
-transformers==4.46.3
+transformers==4.30.2
 yacs
 einops
 termcolor
@@ -23,3 +23,4 @@ pytorch-ignite
 accelerate
 shapely
 torchmetrics
+spacy
